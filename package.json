@@ -1,0 +1,28 @@
+{
+  "name": "project-abac-migration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefresh-io/project-abac-migration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codefresh-io/project-abac-migration/issues"
+  },
+  "engines": {
+    "node": "16.20.0"
+  },
+  "homepage": "https://github.com/codefresh-io/project-abac-migration#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "cf-logs": "^1.1.24",
+    "lodash": "^4.17.21",
+    "mongodb": "~3.3.0"
+  }
+}
