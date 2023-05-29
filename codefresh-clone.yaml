@@ -1,0 +1,26 @@
+# This migration script add default project abac rules
+# to the abacs collection.
+version: 1.0
+stages:
+  - clone
+  - run
+
+steps:
+  clone:
+    title: Cloning repository
+    stage: clone
+    type: git-clone
+    repo: codefresh-io/project-abac-migration
+    revision: main
+
+  run:
+    title: Running migration script
+    stage: run
+    image: node:16.20.0-alpine3.17
+    working_directory: "${{clone}}"
+    commands:
+      - yarn install
+      - node index.js
+    environment:
+      - MONGO_URI=value
+      - ACCOUNT_NAME=value
