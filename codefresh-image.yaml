@@ -1,0 +1,10 @@
+# This migration script add default project abac rules
+# to the abacs collection.
+version: 1.0
+steps:
+  run:
+    title: Running migration script
+    image: quay.io/codefresh/project-abac-migration:latest
+    environment:
+      - MONGO_URI=value
+      - ACCOUNT_NAME=value
