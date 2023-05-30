@@ -10,8 +10,8 @@ ACCOUNT_NAME (optional) - name of target account. Migration will be performed fo
 
 ## Examples
 
-1. Codefresh pipeline (repo clone) - see [codefresh-clone.yaml](./codefresh-clone.yaml)
-2. Codefresh pipeline (with image) - see [codefresh-image.yaml](./codefresh-image.yaml)
+1. Run script with codefresh pipeline - see [codefresh-clone.yaml](./codefresh-clone.yaml)
+2. Run docker image with codefresh pipeline - see [codefresh-image.yaml](./codefresh-image.yaml)
 3. Run locally
 ```
 yarn install
