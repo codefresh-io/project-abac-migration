@@ -17,4 +17,8 @@ ACCOUNT_NAME (optional) - name of target account. Migration will be performed fo
 yarn install
 MONGO_URI={value} ACCOUNT_NAME={value} node index.js
 ```
+4. Run docker image
+```
+docker run -it --rm -e MONGO_URI={value} --name codefresh-project-abac-migration test/test:1
+```
 
