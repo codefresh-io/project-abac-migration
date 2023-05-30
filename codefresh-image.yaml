@@ -5,7 +5,6 @@ steps:
   run:
     title: Running migration script
     image: quay.io/codefresh/project-abac-migration:latest
-    working_directory: ${{step_id}}
     environment:
       - MONGO_URI=value
       - ACCOUNT_NAME=value
