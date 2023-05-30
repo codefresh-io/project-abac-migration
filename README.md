@@ -5,7 +5,7 @@ Should be used before enabling `abacProject` feature flag to add abac rules with
 ## ENV variables
 ```
 MONGO_URI (required) - mongo URI
-ACCOUNT_NAME (required) - name of account
+ACCOUNT_NAME (optional) - name of target account. Migration will be performed for all accounts if not passed.
 ```
 
 ## Examples
