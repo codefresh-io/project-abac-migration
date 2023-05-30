@@ -4,7 +4,7 @@ Should be used before enabling `abacProject` feature flag to add abac rules with
 
 ## ENV variables
 ```
-MONGO_URI (required) - mongo URI
+MONGO_URI (required) - mongo URI. Please don't forget to pass DB name or you can use same URI as for cf-api.
 ACCOUNT_NAME (optional) - name of target account. Migration will be performed for all accounts if not passed.
 ```
 
