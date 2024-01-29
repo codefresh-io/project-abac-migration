@@ -76,7 +76,7 @@ async function migrateAccount(account, index) {
 
 const migrate = () => {
     logger.info('Starting to migrate accounts abac projects');
-    return MongoClient.connect(process.env.MONGO_URI, { promiseLibrary: Promise })
+    return MongoClient.connect(process.env.MONGO_URI)
         .then((_connection) => {
             logger.info(`Connection established to: ${process.env.MONGO_URI}`);
             connection = _connection
